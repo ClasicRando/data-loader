@@ -1,4 +1,4 @@
-namespace Parsers
+namespace DataLoader.Parsers
 {
     public static class ParsingUtilities
     {

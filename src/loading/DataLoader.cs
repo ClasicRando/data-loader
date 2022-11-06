@@ -1,9 +1,9 @@
 using LanguageExt.Common;
 using Npgsql;
-using Options;
-using Parsers;
+using DataLoader.Options;
+using DataLoader.Parsers;
 
-namespace Loading
+namespace DataLoader.Loading
 {
     class DataLoader<O> : IDataLoader where O: IDataOptions
     {

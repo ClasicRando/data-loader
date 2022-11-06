@@ -1,7 +1,7 @@
 using NPOI.SS.UserModel;
-using Options;
+using DataLoader.Options;
 
-namespace Parsers
+namespace DataLoader.Parsers
 {
     public class ExcelDataParser : IDataParser<ExcelDataOptions>
     {
@@ -37,7 +37,7 @@ namespace Parsers
             workbook.Close();
         }
 
-        string MapCellValue(ICell cell, IFormulaEvaluator evaluator)
+        static string MapCellValue(ICell cell, IFormulaEvaluator evaluator)
         {
             if (cell == null)
             {

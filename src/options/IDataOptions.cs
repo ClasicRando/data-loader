@@ -1,4 +1,4 @@
-namespace Options
+namespace DataLoader.Options
 {
     public interface IDataOptions
     {

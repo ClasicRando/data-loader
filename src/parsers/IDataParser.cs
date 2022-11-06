@@ -1,6 +1,6 @@
-using Options;
+using DataLoader.Options;
 
-namespace Parsers
+namespace DataLoader.Parsers
 {
     public interface IDataParser<O> where O: IDataOptions
     {

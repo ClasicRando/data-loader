@@ -1,6 +1,6 @@
-using Options;
+using DataLoader.Options;
 
-namespace Parsers
+namespace DataLoader.Parsers
 {
     public class DelimitedDataParser: IDataParser<DelimitedDataOptions>
     {

@@ -1,6 +1,6 @@
 using LanguageExt.Common;
 
-namespace Loading
+namespace DataLoader.Loading
 {
     interface IDataLoader
     {

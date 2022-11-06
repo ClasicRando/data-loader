@@ -1,6 +1,6 @@
 namespace Options
 {
-    class CopyOptions : ICopyOptions
+    public class CopyOptions : ICopyOptions
     {
         private readonly string _tableName;
         private readonly string[] _columns;

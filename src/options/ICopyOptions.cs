@@ -1,6 +1,6 @@
 namespace Options
 {
-    interface ICopyOptions
+    public interface ICopyOptions
     {
         string CopyStatement(IDataOptions options);
     }

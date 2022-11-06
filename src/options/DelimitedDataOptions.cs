@@ -1,6 +1,6 @@
 namespace Options
 {
-    struct DelimitedDataOptions : IDataOptions
+    public struct DelimitedDataOptions : IDataOptions
     {
         public char Delimiter { get; }
         public bool HasHeader { get => true; }

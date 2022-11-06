@@ -2,9 +2,9 @@ using Options;
 
 namespace Parsers
 {
-    interface IDataParser
+    public interface IDataParser<O> where O: IDataOptions
     {
-        IDataOptions Options { get; }
-        IAsyncEnumerable<string> Records();
+        O Options { get; }
+        IAsyncEnumerable<IEnumerable<string>> Records();
     }
 }

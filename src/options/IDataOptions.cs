@@ -1,6 +1,6 @@
 namespace Options
 {
-    interface IDataOptions
+    public interface IDataOptions
     {
         public char Delimiter { get; }
         public bool HasHeader { get; }

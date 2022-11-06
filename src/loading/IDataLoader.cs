@@ -1,11 +1,9 @@
-using Npgsql;
-using Options;
-using Parsers;
+using LanguageExt.Common;
 
 namespace Loading
 {
     interface IDataLoader
     {
-        Task<long> LoadData();
+        Task<Result<long>> LoadData();
     }
 }

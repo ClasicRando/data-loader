@@ -2,22 +2,22 @@ using Options;
 
 namespace Parsers
 {
-    class DelimitedDataParser: IDataParser
+    public class DelimitedDataParser: IDataParser<DelimitedDataOptions>
     {
-        public DelimitedDataParser(string filePath, char delimiter, bool isQualified)
+        public DelimitedDataParser(DelimitedDataOptions options)
         {
-            this.Options = new DelimitedDataOptions(filePath, delimiter, isQualified);
+            this.Options = options;
         }
 
-        public IDataOptions Options { get; }
+        public DelimitedDataOptions Options { get; }
 
-        public async IAsyncEnumerable<string> Records()
+        public async IAsyncEnumerable<IEnumerable<string>> Records()
         {
             using var reader = File.OpenText(Options.FilePath);
             var line = string.Empty;
             while ((line = await reader.ReadLineAsync()) != null)
             {
-                yield return line;
+                yield return new[] { line };
             }
         }
     }
